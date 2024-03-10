@@ -7,6 +7,7 @@ import { itemdata } from "./assets/ItemData";
 
 
 export default function Home() {
+
   const data = itemdata;
   return (
     <>
@@ -15,7 +16,7 @@ export default function Home() {
       <HeroParallaxDemo2 />
       <div className='grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-5 mt-6 min-h-full'>
         {data?.map((itemdata) => (
-          <PickleSweet item={itemdata} />
+          <PickleSweet item={[itemdata]} />
         ))}
       </div>
     </>
